@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <section id="top">
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-md-3 logo">
+                    <center><img src="/img/logo-removebg-preview.png" alt="logo"></center>
+                </div>
+                <div class="col-md-6">
+                    <h5>GOVERNMENT OF THE PEOPLE'S REPUBLIC OF BANGLADESH <br>NATIONAL BOARD OF REVENUE <br><br>VALUE
+                        ADDED
+                        TAX RETURN FORM <br>[Rule 47(1)]
+                </div>
+                </h5>
+                <div class="col-md-3">
+                    <h5>|| Mushak - 9.1 || </h5>
+                </div>
+            </div>
+    </section>
+
+    <section id="firstTable">
+        <h6>SECTION - 1: TAXPAYER'S INFORMATION</h6>
+        <table class="table table-bordered">
+            <tr>
+                <td style="width: 300px;">1. BIN</td>
+                <td style="width: 10px;">:</td>
+                <td><input type="text" class="form-control" placeholder=""></td>
+            </tr>
+            <tr>
+                <td style="width: 300px;">2. Name of Taxpayer</td>
+                <td style="width: 10px;">:</td>
+                <td><input type="text" class="form-control" placeholder=""></td>
+            </tr>
+            <tr>
+                <td style="width: 300px;">3. Address of Taxpayer</td>
+                <td style="width: 10px;">:</td>
+                <td><input type="text" class="form-control" placeholder=""></td>
+            </tr>
+            <tr>
+                <td style="width: 300px;">4. Nature of Business</td>
+                <td style="width: 10px;">:</td>
+                <td><input type="text" class="form-control" placeholder=""></td>
+            </tr>
+            <tr>
+                <td style="width: 300px;">5. Economic Activity</td>
+                <td style="width: 10px;">:</td>
+                <td><input type="text" class="form-control" placeholder=""></td>
+            </tr>
+        </table>
+    </section>
+    <section id="secondTable">
+        <h6>SECTION - 2: RETURN SUBMISSION DATA</h6>
+        <table class="table table-bordered">
+            <tr>
+                <td style="width: 400px;">1. Tax Period </td>
+                <td style="width: 10px;">:</td>
+                <td>
+                    <center> Oct / 2022 </center>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td style="width: 400px;">2. Type of Return [Please select your desired option]</td>
+                <td style="width: 10px;">:</td>
+                <td>A) Main/Original Return (Section 64) <input type="checkbox" name="" id="">
+                    <br> B) Late Return (section 65) <input type="checkbox" name="" id="">
+                    <br> C) Amend Return (section 66) <input type="checkbox" name="" id="">
+                    <br> D) Full or Additional or Alternative Return (Section 67) <input type="checkbox" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 400px;">3. Any activities in this Tax Period? [If Selected “No” Please Fill Only the
+                    relevant Part]</td>
+                <td style="width: 10px;">:</td>
+                <td>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Yes
+                        <label class="form-check-label" for="radio1"></label>
+                      </div>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">No
+                        <label class="form-check-label" for="radio2"></label>
+                      </div>
+                      <br>
+                      [If Selected “No” Please Fill Only Section I, II & X]
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 400px;">4. Date of Submission</td>
+                <td style="width: 10px;">:</td>
+                <td><input type="date" class="form-control" placeholder=""></td>
+            </tr>
+        </table>
+    </section>
+
+
+    <section id="thirdSection">
+        <h6>SECTION - 3: SUPPLY - OUTPUT TAX</h6>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="2">Nature of Supply</th>
+                    <th>Note</th>
+                    <th> Value (a) </th>
+                    <th> SD (b) </th>
+                    <th> VAT (c) </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 250px;" rowspan="2">Zero Rated Goods/Service </td>
+                    <td>Direct Export</td>
+                    <td>1</td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Deemed Export</td>
+                    <td>2</td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Exempted Goods/Service</td>
+                    <td>3</td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Standard Rated Goods/Service</td>
+                    <td>4</td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Goods Based on MRP </td>
+                    <td>5</td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Goods/Service Based on Specific VAT </td>
+                    <td>6</td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Goods/Service Other than Standard Rate </td>
+                    <td>7</td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Retail/Whole Sale/Trade Based Supply </td>
+                    <td>8</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b> Sales Value &Total Payble Taxes </b></td>
+                    <td>9</td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                    <td>0.00</td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="forthSection">
+        <h6>SECTION - 4: PURCHASE - INPUT TAX</h6>
+        <p>1) If all the products/services you supply are standard rated, fill up note 10 - 20. <br> 2) All the
+            products/services you supply are not standard rated or input tax credit not taken within stipulated time
+            period under section 46, fill up note 21 - 22. <br> 3) If the products/services you supply consist of both
+            standard rated and non - standard rated, then fill up note 10 - 20 for the raw materials that were used to
+            produce/supply standard rated goods/services and fill up note 21 - 22 for the raw materials that were used
+            to produce/supply non - standard rated goods/services and show the value proportionately in note 10 - 22 as
+            applicable</p>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width: 300px ;" colspan="2">Nature of Purchase</th>
+                    <th>Note</th>
+                    <th> Value (a) </th>
+                    <th> VAT (b) </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 450px;" rowspan="2">Zero Rated Goods/Service </td>
+                    <td>Local Purchase</td>
+                    <td>10</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Import</td>
+                    <td>11</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td style="width: 150;" rowspan="2">Exempted Goods/Service </td>
+                    <td>Local Purchase</td>
+                    <td>12</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Import</td>
+                    <td>13</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td style="width: 150;" rowspan="2">Standard Rated Goods/Service </td>
+                    <td>Local Purchase</td>
+                    <td>14</td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Import</td>
+                    <td>15</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td style="width: 150;" rowspan="2">Goods/Service Other than Standard Rate </td>
+                    <td>Local Purchase</td>
+                    <td>16</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Import</td>
+                    <td>17</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Goods/Service Based on Specific VAT</td>
+                    <td>Import</td>
+                    <td>18</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td style="width: 150;" rowspan="2">Goods/Service Not Admissible for Credit (Local Purchase) </td>
+                    <td>Local Purchase</td>
+                    <td>19</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Import</td>
+                    <td>20</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td style="width: 150;" rowspan="2">Goods/Service Not Admissible for Credit (Taxpayers who sell only
+                        Exempted/ Specific VAT and Goods/Service Other than Standard Rate/ Credits not taken</td>
+                    <td>Local Purchase</td>
+                    <td>21</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Import</td>
+                    <td>22</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td><b>Total Input Tax Credit</b></td>
+                    <td></td>
+                    <td>23</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0"></td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="fifthSection">
+        <h6>SECTION - 5: INCREASING ADJUSTMENTS (VAT)</h6>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width: 500px ;">Adjustment Details</th>
+                    <th style="width: 100px;">Note</th>
+                    <th> VAT Amount </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Due to VAT Deducted at Source by the supply</td>
+                    <td>24</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Payment Not Made Through Banking Channel</td>
+                    <td>25</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Issuance of Debit Note</td>
+                    <td>26</td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Any Other Adjustments (please specify below) 
+                        <input type="number" class="form-control" placeholder="VAT on House Rent">
+                    </td>
+                    <td>27</td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td><b>Total Decreasing Adjustment</b></td>
+                    <td>28</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="sixthSection">
+        <h6>SECTION - 6: DECREASING ADJUSTMENTS (VAT)</h6>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width: 500px ;">Adjustment Details</th>
+                    <th style="width: 100px;">Note</th>
+                    <th> VAT Amount </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Due to VAT Deducted at Source from the supplies delivered</td>
+                    <td>29</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Advance Tax Paid at Import Stage</td>
+                    <td>30</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Issuance of Credit Note </td>
+                    <td>31</td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Any Other Adjustments (please specify below) 
+                        <input type="number" class="form-control" placeholder="">
+                    </td>
+                    <td>32</td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td><b>Total Decreasing Adjustment</b></td>
+                    <td>33</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="seventhSection">
+        <h6>SECTION - 7: NET TAX CALCULATION </h6>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width: 800px ;"><center>Items</center></th>
+                    <th style="width: 100px;">Note</th>
+                    <th> Amount </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Net Payable VAT for the Tax Period (Section - 45) ( 9C - 23B+28 - 33) </td>
+                    <td>34</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Net Payable VAT for the Tax Period after Adjustment with Closing Balance and balance of form 18.6 [34 - (52+56)]  </td>
+                    <td>35</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Net Payable Supplementary Duty for the Tax Period (Before adjustment with Closing Balance) [9B+38 - (39+40)] </td>
+                    <td>36</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Net Payable Supplementary Duty for the Tax Period after Adjusted with Closing Balance and balance of form 18.6 [36 - (53+57)] </td>
+                    <td>37</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Supplementary Duty Against Issuance of Debit Note</td>
+                    <td>38</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Supplementary Duty Against Issuance of Credit Note </td>
+                    <td>39</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Supplementary Duty Paid on Inputs Against Exports </td>
+                    <td>40</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Interest on Overdue VAT (Based on note 35) </td>
+                    <td>41</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Interest on Overdue SD (Based on note 37) </td>
+                    <td>42</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Fine/Penalty for Non - submission of Return </td>
+                    <td>43</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Other Fine/Penalty/Interest </td>
+                    <td>44</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Payable Excise Duty </td>
+                    <td>45</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Payable Development Surcharge </td>
+                    <td>46</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Payable ICT Development Surcharge </td>
+                    <td>47</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Payable Health Care Surcharge </td>
+                    <td>48</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Payable Environmental Protection Surcharge</td>
+                    <td>49</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Net payable VAT for treasury deposit ( 35+41+43+44)  </td>
+                    <td>50</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Net payable SD for treasury deposit ( 37+42) </td>
+                    <td>51</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Closing Balance of Last Tax Period (VAT)</td>
+                    <td>52</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Closing Balance of Last Tax Period (SD) </td>
+                    <td>53</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <section id="eightthSection">
+        <h6>SECTION - 8: ADJUSTMENT FOR OLD ACCOUNT CURRENT BALANCE </h6>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width: 800px ;"><center>Items</center></th>
+                    <th style="width: 100px;">Note</th>
+                    <th> Amount </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Remaining Balance (VAT) from Mushak - 18.6,[ Rule 118(5)]</td>
+                    <td>54</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Remaining Balance (SD) from Mushak - 18.6,[ Rule 118(5)] </td>
+                    <td>55</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Decreasing Adjustment for Note 54 (up to 30% of Note 34)</td>
+                    <td>56</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Decreasing Adjustment for Note 55 (up to 30% of Note 36)</td>
+                    <td>57</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="ninethSection">
+        <h6>SECTION - 9: ACCOUNTS CODE WISE PAYMENT SCHEDULE (TREASURY DEPOSIT) </h6>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width: 500px ;"><center>Items</center></th>
+                    <th style="width: 100px;">Note</th>
+                    <th> Account Code  </th>
+                    <th> Amount </th>
+                    <th> sub form </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>VAT Deposit for the Current</td>
+                    <td>58</td>
+                    <td>1/1133/0030/0311</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>SD Deposit for the Current Tax Period</td>
+                    <td>59</td>
+                    <td>1/11/33/0018/0711-0721</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Excise Duty</td>
+                    <td>60</td>
+                    <td>1/1133/ Operational Code /0311</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Development Surcharge</td>
+                    <td>61</td>
+                    <td>1/1133/ Operational Code /0711-0721</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>ICT Development Surcharge</td>
+                    <td>62</td>
+                    <td>1/1103/ Operational Code </td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Health Care Surcharge</td>
+                    <td>63</td>
+                    <td>1/1133/ Operational Code</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td>sub form</td>
+                </tr>
+                <tr>
+                    <td>Environmental Protection Surcharge</td>
+                    <td>64</td>
+                    <td>1/1103/ Operational Code</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                    <td>sub form</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="tenthSection">
+        <h6>SECTION - 10: ACCOUNTS CODE WISE PAYMENT SCHEDULE (TREASURY DEPOSIT)  </h6>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width: 800px ;"><center>Items</center></th>
+                    <th style="width: 100px;">Note</th>
+                    <th> Amount </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Closing Balance (VAT) [58 - (50 + 67) + The refund amount not approved] </td>
+                    <td>65</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Closing Balance (SD) [59 - (51 + 68) + The refund amount not approved] </td>
+                    <td>66</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="eleventhSection">
+        <h6>SECTION - 11:REFUND   </h6>
+        <table class="table table-bordered">
+            <thead>
+                <tr >
+                    <th style="width: 400px;"></th>
+                    <th  style="width: 400px ;"><center>Items</center></th>
+                    <th style="width: 100px;">Note</th>
+                    <th> 
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Yes
+                            <label class="form-check-label" for="radio1"></label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">No
+                            <label class="form-check-label" for="radio2"></label>
+                          </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">I am interested to get refund of my Closing Balance </td>
+                    <td>Requested Amount for Refund (VAT)</td>
+                    <td>67</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+                <tr>
+                    <td>Requested Amount for Refund (SD) </td>
+                    <td>68</td>
+                    <td><input type="number" min="0" class="form-control" placeholder="0.00"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="twelthSection">
+        <h6>SECTION - 12: DECLARATION </h6>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="3"> I hereby declare that all information provided in this Return Form are complete, true & accurate. In case of any untrue/incomplete statement, I may be subjected to penal action under The Value Added Tax and Supplementary Duty Act, 2012 or any other applicable Act prevailing at present </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>:</td>
+                    <td><input type="text" min="0" class="form-control" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td>Designation</td>
+                    <td>:</td>
+                    <td><input type="text" min="0" class="form-control" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td>:</td>
+                    <td><input type="tel" min="0" class="form-control" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td>National ID/Passport Number</td>
+                    <td>:</td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="email" min="0" class="form-control" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td>Signature [Not required for electronic submission] </td>
+                    <td>:</td>
+                    <td><input type="number" min="0" class="form-control" placeholder=""></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
